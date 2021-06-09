@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">May 1, 2020 03:42:47 PM</span>
+                    <span class="badge badge-primary">Jun 9, 2021 04:00:14 PM</span>
                 </a>
             </li>
         </ul>
@@ -122,28 +122,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="pass" test-id="1"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">basePageNavigation</p>
-							<p class="duration text-sm">0h 0m 22s+590ms</p>
-							<span class="datetime">15:42:56 PM</span>
+							<p class="duration text-sm">0h 0m 23s+667ms</p>
+							<span class="datetime">16:00:22 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">basePageNavigation</h5>
-									<span class='badge badge-success'>05.01.2020 15:42:56</span>
-									<span class='badge badge-danger'>05.01.2020 15:43:18</span>
-									<span class='badge badge-default'>0h 0m 22s+590ms</span>
+									<h5 class="test-status text-fail">basePageNavigation</h5>
+									<span class='badge badge-success'>06.09.2021 16:00:22</span>
+									<span class='badge badge-danger'>06.09.2021 16:00:46</span>
+									<span class='badge badge-default'>0h 0m 23s+667ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -159,10 +159,103 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>3:43:18 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>4:00:46 PM</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARMEET-PC', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\Harmeet\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58a1d270b02f5ad424605819063ccf14
+*** Element info: {Using=css selector, value=[value='Log In']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LoginPage.getLogin(LoginPage.java:48)
+	at Academy.HomePage.basePageNavigation(HomePage.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</textarea>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>4:00:46 PM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARMEET-PC', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\Harmeet\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58a1d270b02f5ad424605819063ccf14
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at resources.base.getScreenShotPath(base.java:72)
+	at Academy.Listeners.onTestFailure(Listeners.java:47)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
@@ -180,8 +273,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">validateAppTitle</p>
-							<p class="duration text-sm">0h 0m 0s+652ms</p>
-							<span class="datetime">15:43:05 PM</span>
+							<p class="duration text-sm">0h 0m 2s+462ms</p>
+							<span class="datetime">16:00:29 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -189,9 +282,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">validateAppTitle</h5>
-									<span class='badge badge-success'>05.01.2020 15:43:05</span>
-									<span class='badge badge-danger'>05.01.2020 15:43:06</span>
-									<span class='badge badge-default'>0h 0m 0s+652ms</span>
+									<span class='badge badge-success'>06.09.2021 16:00:29</span>
+									<span class='badge badge-danger'>06.09.2021 16:00:32</span>
+									<span class='badge badge-default'>0h 0m 2s+462ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -208,36 +301,38 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>3:43:06 PM</td>
+				<td>4:00:32 PM</td>
 				<td>
 						<textarea disabled class="code-block">java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
 	at Academy.validateTitle.validateAppTitle(validateTitle.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </textarea>
 				</td>
 			</tr>
@@ -246,7 +341,7 @@
 </div>
 <div class="detail-foot">
 	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Owner\Documents\E2EProject\reports\validateAppTitle.png' src='C:\Users\Owner\Documents\E2EProject\reports\validateAppTitle.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='E:\git\E2EProjectMVN\reports\validateAppTitle.png' src='E:\git\E2EProjectMVN\reports\validateAppTitle.png'>
 	</ul>
 </div>
 					</div>
@@ -261,8 +356,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">validateAppNavBar</p>
-							<p class="duration text-sm">0h 0m 1s+560ms</p>
-							<span class="datetime">15:43:05 PM</span>
+							<p class="duration text-sm">0h 0m 0s+298ms</p>
+							<span class="datetime">16:00:31 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -270,9 +365,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">validateAppNavBar</h5>
-									<span class='badge badge-success'>05.01.2020 15:43:05</span>
-									<span class='badge badge-danger'>05.01.2020 15:43:07</span>
-									<span class='badge badge-default'>0h 0m 1s+560ms</span>
+									<span class='badge badge-success'>06.09.2021 16:00:31</span>
+									<span class='badge badge-danger'>06.09.2021 16:00:32</span>
+									<span class='badge badge-default'>0h 0m 0s+298ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -289,7 +384,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>3:43:07 PM</td>
+				<td>4:00:32 PM</td>
 				<td>
 						Test Passed
 				</td>
@@ -309,8 +404,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">validateHeader</p>
-							<p class="duration text-sm">0h 0m 0s+139ms</p>
-							<span class="datetime">15:43:08 PM</span>
+							<p class="duration text-sm">0h 0m 10s+315ms</p>
+							<span class="datetime">16:00:34 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -318,9 +413,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">validateHeader</h5>
-									<span class='badge badge-success'>05.01.2020 15:43:08</span>
-									<span class='badge badge-danger'>05.01.2020 15:43:08</span>
-									<span class='badge badge-default'>0h 0m 0s+139ms</span>
+									<span class='badge badge-success'>06.09.2021 16:00:34</span>
+									<span class='badge badge-danger'>06.09.2021 16:00:44</span>
+									<span class='badge badge-default'>0h 0m 10s+315ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -337,36 +432,56 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>3:43:08 PM</td>
+				<td>4:00:44 PM</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [An Academy to learn Everything about Testing] but found [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='video-banner'] h3"}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARMEET-PC', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\Harmeet\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58a1d270b02f5ad424605819063ccf14
+*** Element info: {Using=css selector, value=div[class*='video-banner'] h3}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LandingPage.getHeader(LandingPage.java:51)
 	at Academy.validateTitle.validateHeader(validateTitle.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </textarea>
 				</td>
 			</tr>
@@ -375,56 +490,8 @@
 </div>
 <div class="detail-foot">
 	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Owner\Documents\E2EProject\reports\validateHeader.png' src='C:\Users\Owner\Documents\E2EProject\reports\validateHeader.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='E:\git\E2EProjectMVN\reports\validateHeader.png' src='E:\git\E2EProjectMVN\reports\validateHeader.png'>
 	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="5"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">basePageNavigation</p>
-							<p class="duration text-sm">0h 0m 11s+251ms</p>
-							<span class="datetime">15:43:18 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">basePageNavigation</h5>
-									<span class='badge badge-success'>05.01.2020 15:43:18</span>
-									<span class='badge badge-danger'>05.01.2020 15:43:30</span>
-									<span class='badge badge-default'>0h 0m 11s+251ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>3:43:30 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
 </div>
 					</div>
 				</li>
@@ -458,7 +525,7 @@
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">1</span>
+					<span class="badge badge-primary">3</span>
 					</a>
 				</li>
 			</ul>
@@ -468,8 +535,43 @@
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
+							<p class="name">org.openqa.selenium.NoSuchSessionException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.openqa.selenium.NoSuchSessionException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>16:00:22 PM</td>
+									<td class='linked' test-id='1'>
+										basePageNavigation
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
 							<p class="name">java.lang.AssertionError</p>
-							<p class="duration text-sm">2 tests</p>
+							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -491,18 +593,42 @@
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>15:43:05 PM</td>
+									<td>16:00:29 PM</td>
 									<td class='linked' test-id='2'>
 										validateAppTitle
 									</td>
 								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">org.openqa.selenium.NoSuchElementException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.openqa.selenium.NoSuchElementException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
 								<tr>
 									<td>
 										<div class='status-avatar fail-bg'>
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>15:43:08 PM</td>
+									<td>16:00:34 PM</td>
 									<td class='linked' test-id='4'>
 										validateHeader
 									</td>
@@ -542,12 +668,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='60%'>
-						<b>3</b> tests passed
+					<div><small data-tooltip='25%'>
+						<b>1</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='40%'><b>2</b> tests failed, 
+						<small data-tooltip='75%'><b>3</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -565,9 +691,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='60%'><b>3</b> events passed</small></div>
+					<div><small data-tooltip='20%'><b>1</b> events passed</small></div>
 					<div>
-						<small data-tooltip='40%'><b>2</b> events failed, 
+						<small data-tooltip='80%'><b>4</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -582,10 +708,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">5</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">4</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>60.00%</span>
+							<span>25.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -601,7 +727,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">May 1, 2020 03:42:47 PM</h4>
+							<h4 class="font-weight-light mt-4">Jun 9, 2021 04:00:14 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -617,7 +743,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 46s+954ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 32s+130ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -670,14 +796,14 @@
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 5,
-		passParent: 3,
-		failParent: 2,
+	    parentCount: 4,
+		passParent: 1,
+		failParent: 3,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 2,
+		exceptionsParent: 3,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -699,8 +825,8 @@
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
 		eventsCount: 5,
-		passEvents: 3,
-		failEvents: 2,
+		passEvents: 1,
+		failEvents: 4,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -712,7 +838,7 @@
 </script>
 <script>
 	var timeline = {
-	        "basePageNavigation":22.59,"validateAppTitle":0.652,"validateAppNavBar":1.56,"validateHeader":0.139,"basePageNavigation":11.251
+	        "basePageNavigation":23.667,"validateAppTitle":2.462,"validateAppNavBar":0.298,"validateHeader":10.315
 	};
 </script>
                 </div>
